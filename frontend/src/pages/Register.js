@@ -84,7 +84,7 @@ export default function Register() {
         </button>
 
         <p>
-          Already have an account? <Link to="/">Login</Link>
+          Already have an account? <Link to="/" style={{ color: "#60a5fa", textDecoration: "none" }}>Login</Link>
         </p>
       </form>
     </div>
@@ -97,34 +97,59 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "#f4f4f4",
+    background: "linear-gradient(135deg, #141e30, #243b55)",
+    fontFamily: "Arial, sans-serif",
   },
   card: {
-    padding: "30px",
-    background: "#fff",
-    borderRadius: "10px",
-    width: "300px",
-    boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+    padding: "35px",
+    background: "#1f2937", // dark card
+    borderRadius: "12px",
+    width: "320px",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.5)",
+    textAlign: "center",
+  },
+  title: {
+    marginBottom: "20px",
+    color: "#f5f6f8",
+    fontSize: "24px",
+    fontWeight: "bold",
   },
   input: {
     width: "100%",
-    padding: "10px",
+    padding: "12px",
     margin: "10px 0",
+    borderRadius: "8px",
+    border: "1px solid #dce8fb",
+    background: "#dbe5f9",
+    color: "#02213f",
+    outline: "none",
+    fontSize: "14px",
   },
   button: {
     width: "100%",
-    padding: "10px",
-    background: "#28a745",
+    padding: "12px",
+    marginTop: "10px",
+    background: "linear-gradient(135deg, #2230c5, #1635a3)",
     color: "#fff",
     border: "none",
+    borderRadius: "8px",
     cursor: "pointer",
+    fontWeight: "bold",
   },
   error: {
-    color: "red",
-    fontSize: "14px",
+    color: "#f87171",
+    fontSize: "13px",
+    marginBottom: "10px",
   },
   success: {
-    color: "green",
+    color: "#4ade80",
+    fontSize: "13px",
+    marginBottom: "10px",
+  },
+  link: {
+    marginTop: "15px",
     fontSize: "14px",
+    color: "#9ca3af",
   },
 };
+
