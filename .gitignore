@@ -17,8 +17,6 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# React / frontend build
-frontend/build/
 
 # backend logs (if any)
 backend/logs/
